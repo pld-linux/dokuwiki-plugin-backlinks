@@ -14,7 +14,7 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		dokuconf	/etc/webapps/dokuwiki
-%define		dokudir	/usr/share/dokuwiki
+%define		dokudir		/usr/share/dokuwiki
 %define		plugindir	%{dokudir}/lib/plugins/%{plugin}
 
 %description
@@ -22,8 +22,9 @@ Lists all pages that link back to a given page using the first headline as link 
 
 %prep
 %setup -q -n %{plugin}
-if [ $(cat VERSION | tr -d -) != %{version} ]; then
-	: %%{version} mismatch, should be: $(cat VERSION | tr -d -)
+version=$(cat VERSION)
+if [ "$(echo "$version" | tr -d -)" != %{version} ]; then
+	: %%{version} mismatch
 	exit 1
 fi
 
