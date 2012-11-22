@@ -3,7 +3,7 @@ Summary:	DokuWiki Backlinks Plugin
 Summary(pl.UTF-8):	Wtyczka backlinks dla DokuWiki
 Name:		dokuwiki-plugin-%{plugin}
 Version:	20090521
-Release:	0.1
+Release:	1
 License:	GPL v2
 Group:		Applications/WWW
 Source0:	http://cloud.github.com/downloads/chimeric/dokuwiki-plugin-backlinks/plugin-backlinks.tgz
@@ -18,7 +18,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		plugindir	%{dokudir}/lib/plugins/%{plugin}
 
 %description
-Lists all pages that link back to a given page using the first headline as link title.
+Lists all pages that link back to a given page using the first
+headline as link title.
 
 %prep
 %setup -q -n %{plugin}
