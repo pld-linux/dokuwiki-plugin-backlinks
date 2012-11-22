@@ -2,12 +2,12 @@
 Summary:	DokuWiki Backlinks Plugin
 Summary(pl.UTF-8):	Wtyczka backlinks dla DokuWiki
 Name:		dokuwiki-plugin-%{plugin}
-Version:	20080321
+Version:	20090521
 Release:	0.1
 License:	GPL v2
 Group:		Applications/WWW
-Source0:	http://www.chimeric.de/_src/plugin-backlinks.tgz
-# Source0-md5:	5ff0ac61d1f7438c13e64395a51364fe
+Source0:	http://cloud.github.com/downloads/chimeric/dokuwiki-plugin-backlinks/plugin-backlinks.tgz
+# Source0-md5:	916d5121fd40fe9a5b5d0a2accb66ce6
 URL:		http://www.dokuwiki.org/plugin:backlinks2
 Requires:	dokuwiki >= 20061106
 BuildArch:	noarch
